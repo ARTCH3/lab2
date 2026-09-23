@@ -51,5 +51,26 @@ public class Main {
         System.out.println("Нечётные:");
         separator.odd();
         System.out.println("<--- Задание 4: Конец --->");
+        // Задание 5
+        System.out.println("<--- Задание 5: Начало --->");
+        Table table = new Table(2, 3);
+
+        table.setValue(0, 0, 10);
+        table.setValue(0, 1, 20);
+        table.setValue(0, 2, 30);
+
+        table.setValue(1, 0, 40);
+        table.setValue(1, 1, 50);
+        table.setValue(1, 2, 60);
+
+        System.out.println(table);
+
+        System.out.println("Строк: " + table.rows());
+        System.out.println("Столбцов: " + table.cols());
+
+        System.out.println("Значение: " + table.getValue(1, 2));
+
+        System.out.println("Среднее: " + table.average());
+        System.out.println("<--- Задание 5: Конец --->");
     }
 }
