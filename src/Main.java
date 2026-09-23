@@ -25,5 +25,14 @@ public class Main {
         balance3.addRight(10);
         balance3.result();
         System.out.println("<--- Задание 2: Конец --->");
+        // Задание 3
+        System.out.println("<--- Задание 3: Начало --->");
+        Bell bell = new Bell();
+
+        bell.sound();
+        bell.sound();
+        bell.sound();
+        bell.sound();
+        System.out.println("<--- Задание 3: Конец --->");
     }
 }
