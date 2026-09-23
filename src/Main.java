@@ -1,3 +1,9 @@
+import geometry2d.Circle;
+import geometry2d.Rectangle;
+import geometry3d.Cylinder;
+import exceptions.InvalidRadiusException;
+import exceptions.InvalidHeightException;
+
 public class Main {
     public static void main(String[] args) {
 
@@ -72,5 +78,31 @@ public class Main {
 
         System.out.println("Среднее: " + table.average());
         System.out.println("<--- Задание 5: Конец --->");
+        // Задание 6
+        System.out.println("<--- Задание 6: Начало --->");
+        try {
+            Circle circle = new Circle(5);
+
+            System.out.println(circle);
+            System.out.println("Площадь: " + circle.area());
+            System.out.println("Периметр: " + circle.perimeter());
+
+            Rectangle rectangle = new Rectangle(4, 6);
+
+            System.out.println(rectangle);
+            System.out.println("Площадь: " + rectangle.area());
+            System.out.println("Периметр: " + rectangle.perimeter());
+
+            Cylinder cylinder = new Cylinder(circle, 10);
+
+            System.out.println("Объём цилиндра: " + cylinder.volume());
+        }
+        catch (InvalidRadiusException e) {
+            System.out.println(e.getMessage());
+        }
+        catch (InvalidHeightException e) {
+            System.out.println(e.getMessage());
+        }
+        System.out.println("<--- Задание 6: Конец --->");
     }
 }
