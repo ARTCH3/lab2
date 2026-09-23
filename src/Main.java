@@ -34,5 +34,22 @@ public class Main {
         bell.sound();
         bell.sound();
         System.out.println("<--- Задание 3: Конец --->");
+        // Задание 4
+        System.out.println("<--- Задание 4: Начало --->");
+        OddEvenSeparator separator = new OddEvenSeparator();
+
+        separator.addNumber(1);
+        separator.addNumber(2);
+        separator.addNumber(3);
+        separator.addNumber(4);
+        separator.addNumber(5);
+        separator.addNumber(6);
+
+        System.out.println("Чётные:");
+        separator.even();
+
+        System.out.println("Нечётные:");
+        separator.odd();
+        System.out.println("<--- Задание 4: Конец --->");
     }
 }
